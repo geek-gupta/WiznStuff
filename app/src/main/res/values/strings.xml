@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">EgluRemoteAppUI</string>
+    <string name="temprt_text">23<sup><small>o</small></sup>c</string>
+</resources>

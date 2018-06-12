@@ -1,0 +1,84 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="MySeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressBackgroundTint" tools:targetApi="lollipop">#f4511e</item>
+        <item name="android:progressTint" tools:targetApi="lollipop">#388e3c</item>
+        <item name="android:colorControlActivated" tools:targetApi="lollipop">#c51162</item>
+    </style>
+
+    <style name="power_Button">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:background">@drawable/rec_round_corner_white_blur</item>
+        <item name="android:elevation" tools:targetApi="lollipop">10dp</item>
+    </style>
+
+
+
+    <style name="Vol_chnl_style">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:background">@drawable/rec_round_corner_white_blur</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:weightSum">5</item>
+    </style>
+
+    <style name="circular_button_remote">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:weightSum">5</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/circle_layout_bg_250dp</item>
+    </style>
+
+    <style name="btn_small_icon_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rec_round_corner_white_blur</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="led_strip_small_icon_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rec_round_corner_white_blur</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="rounded_corner_rectangle_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rec_round_corner_white_blur</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="rounded_rect_corner_width_medium_style">
+        <item name="android:layout_width">117dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rec_round_corner_white_blur</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="bg_blue_ten_padding">
+        <item name="android:background">@drawable/bg1</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+</resources>
