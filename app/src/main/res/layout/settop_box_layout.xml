@@ -34,7 +34,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginEnd="34dp"
         android:layout_marginRight="34dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="36dp"
         android:src="@drawable/ic_fast_forward_black_24dp"
         android:id="@+id/imageButton7"
         tools:ignore="VectorDrawableCompat"
@@ -78,10 +78,11 @@
 
 
     <LinearLayout
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="50dp"
         android:layout_marginLeft="32dp"
         android:layout_alignParentLeft="true"
         android:id="@+id/linearLayout3"
+        android:layout_below="@id/imageButton21"
         style="@style/circular_button_remote">
 
 
@@ -142,8 +143,9 @@
         android:id="@+id/linearLayout4"
         android:layout_marginRight="34dp"
         android:layout_alignRight="@+id/linearLayout3"
-        android:layout_marginTop="220dp"
+        android:layout_below="@id/imageButton21"
         android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
         style="@style/Vol_chnl_style">
 
         <ImageButton
@@ -174,40 +176,38 @@
 
     <ImageButton
         android:id="@+id/imageButton22"
+        style="@style/btn_small_icon_style"
         android:layout_alignLeft="@+id/linearLayout3"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/linearLayout3"
-        android:layout_marginBottom="36dp"
-        app:srcCompat="@drawable/ic_dehaze_black_24dp"
-        style="@style/btn_small_icon_style" />
+        android:layout_marginBottom="40dp"
+        app:srcCompat="@drawable/ic_dehaze_black_24dp" />
 
     <ImageButton
         android:id="@+id/imageButton23"
-        android:layout_alignEnd="@+id/imageButton18"
-        android:layout_alignRight="@+id/imageButton18"
+        style="@style/btn_small_icon_style"
+        android:layout_alignLeft="@+id/imageButton18"
+        android:layout_alignStart="@+id/imageButton18"
         android:layout_alignTop="@+id/imageButton22"
-        android:layout_marginEnd="22dp"
-        android:layout_marginRight="22dp"
-        app:srcCompat="@drawable/ic_volume_mute_black_24dp"
-        style="@style/btn_small_icon_style" />
+        app:srcCompat="@drawable/ic_volume_mute_black_24dp" />
 
     <ImageButton
         android:id="@+id/imageButton24"
-        android:layout_alignEnd="@+id/imageButton19"
-        android:layout_alignRight="@+id/imageButton19"
+        style="@style/btn_small_icon_style"
+        android:layout_alignLeft="@+id/imageButton19"
+        android:layout_alignStart="@+id/imageButton19"
         android:layout_alignTop="@+id/imageButton23"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        app:srcCompat="@drawable/ic_refresh_black_24dp"
-        style="@style/btn_small_icon_style" />
+        app:srcCompat="@drawable/ic_refresh_black_24dp" />
 
     <ImageButton
         android:id="@+id/imageButton25"
-        android:layout_alignEnd="@+id/linearLayout4"
-        android:layout_alignRight="@+id/linearLayout4"
+        style="@style/btn_small_icon_style"
+        android:layout_alignLeft="@+id/imageButton20"
+        android:layout_alignStart="@+id/imageButton20"
         android:layout_alignTop="@+id/imageButton24"
-        app:srcCompat="@drawable/ic_exit_to_app_black_24dp"
-        style="@style/btn_small_icon_style" />
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:srcCompat="@drawable/ic_exit_to_app_black_24dp" />
 
 
 </RelativeLayout>

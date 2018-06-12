@@ -99,9 +99,8 @@
     <ImageButton
         android:id="@+id/imageButton3"
         style="@style/btn_small_icon_style"
-        android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="@+id/linearLayout4"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
         app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
@@ -121,8 +120,7 @@
         android:id="@+id/imageButton5"
         style="@style/btn_small_icon_style"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
         app:srcCompat="@drawable/ic_volume_mute_black_24dp" />
@@ -226,10 +224,8 @@
     <ImageButton
         android:id="@+id/imageButton13"
         style="@style/btn_small_icon_style"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="24dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:tint="#E64A19"
@@ -262,9 +258,8 @@
     <ImageButton
         android:id="@+id/imageButton16"
         style="@style/btn_small_icon_style"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="24dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginTop="24dp"
         android:tint="#1976D2"
         app:layout_constraintBottom_toBottomOf="parent"
