@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>eGlu Product</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Gaurav Kumar">
+  <meta name="keywords" content="eGlu, eglu, eGlu-Smart, Home-Automation, Smart Home,eGlu Products">
+  <meta name="description" content="eGlu Products">
+  <link rel="stylesheet" href="/css_files/support.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <!-- To add data follow the same pattern as of product page data, just tk care of extra data here. -->
+
+
+  <main>
+    <div class="wrapper">
+      <div class="hero-section">
+        <!-- header starts -->
+        <header>
+          <!-- nav starts -->
+          {{> navbar app-logo-image = "../Asset/logos/logo.png"}}
+          <!-- nav closed -->
+        </header>
+        <!-- hader closed -->
+        <div class="hero-section-content">
+        </div>
+      </div>
+    </div>
+    <div class="main-content-section">
+      <div class="content-nav">
+        <button type="button" class="active" id="videoBtn">Videos</button>
+        <button type="button" id="manualBtn">User Manual</button>
+        <button type="button" id="otherBtn">Other Stuff</button>
+      </div>
+      <div class="content-section">
+        <div class="installation-section active2">
+          {{#each videoCategoryDataArray}}
+            <div class="videos-main-content">
+              <div class="category-header">
+                <h1>{{this.categoryTitle}}</h1>
+              </div>
+              <div class="video-content-grid">
+                {{#each this.categoryVideos}}
+                  <div class="grid-item">
+                    <iframe src="{{this.url}}"  allowfullscreen></iframe>
+                    <div class="video-title">
+                      <h3>{{this.title}}</h3>
+                    </div>
+                  </div>
+
+                {{/each}}
+              </div>
+            </div>
+          {{/each}}
+        </div>
+        <div class="user-manual-section">
+          {{#each userManulaDataArray}}
+            <div class="manual-main-content">
+              <div class="category-header">
+                <h1>{{this.categoryTitle}}</h1>
+              </div>
+              <div class="manual-content">
+                {{#each this.categoryUrlLinks}}
+                  <a href="{{this.urlLink}}" target="_blank">{{this.pdfTitle}}</a>
+                {{/each}}
+              </div>
+            </div>
+          {{/each}}
+
+        </div>
+        <div class="other-stuff-section">
+          {{#each userManulaDataArray}}
+            <div class="manual-main-content">
+              <div class="category-header">
+                <h1>{{this.categoryTitle}}</h1>
+              </div>
+              <div class="manual-content">
+                {{#each this.categoryUrlLinks}}
+                  <a href="{{this.urlLink}}" target="_blank">{{this.pdfTitle}}</a>
+                {{/each}}
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+  {{> footer}}
+
+
+
+  <script type="text/javascript" src="../js_files/support.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+
+<style type="text/css">
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Work Sans', sans-serif;
+    font-smoothing: antialiased;
+  }
+
+  body,
+  html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  nav {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    overflow: hidden;
+  }
+
+  .stickynav {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 5;
+  }
+
+  .main-navigation {
+    height: 15vh;
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: auto;
+  }
+
+  .applogo {
+    width: 130px !important;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 2s !important;
+  }
+
+  .applogo:hover {
+    cursor: pointer;
+  }
+
+  .collapsible-nav {
+    margin-left: auto;
+    float: right;
+    height: auto;
+    padding-top: 20px;
+    animation-duration: 2s !important;
+  }
+
+  .show-menu {
+    margin-left: auto;
+    width: 30px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .nav-items ul {
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  .nav-items ul li {
+    float: left;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .nav-items ul li a {
+    text-decoration: none;
+  }
+
+  li p {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  li p:hover {
+    color: lightblue;
+  }
+
+  #sign-up-btn {
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  #sign-up-btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2b6ca3;
+    /* background-color: rgba(0,0,0, 0.9); */
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center !important;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+    text-decoration: none;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  .glyphicon {
+    font-size: 20px;
+  }
+
+  #sign-up-btn {
+    border: 1px solid white;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30%;
+  }
+
+
+  @media screen and (max-width: 1600px) {
+    .main-navigation {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 1120px) {
+    .main-navigation {
+      width: 95%;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    .collapsible-nav {
+      display: none;
+    }
+    .show-menu {
+      display: block;
+    }
+
+  }
+
+  @media screen and (max-height: 400px) {
+    .main-navigation {
+      height: 20vh;
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+    #app-name-shown {
+      display: none;
+    }
+    #app-name-hidden {
+      display: block;
+    }
+  }
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+  }
+  /* This is for mozilla fonts, as in mozilla font are rendered differently.
+  Add class or id on which you want to make changes.
+  */
+
+  @-moz-document url-prefix() {
+     /* add .. */
+  }
+</style>
+
+<div id="nav-overlay" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content" style="display:flex;justify-content:center;text-align:center;flex-flow: column;">
+    <a href="/">HOME</a>
+    <a href="/product">PRODUCT</a>
+    <a href="/support">SUPPORT</a>
+    <a href="/about">ABOUT</a>
+    <a href="/faq">FAQ</a>
+  </div>
+</div>
+<nav id="navBar">
+  <div class="main-navigation">
+    <div class="applogo animated fadeIn ">
+      <a href="/"><img width="130px" src="{{app-logo-image}}" alt="logo_normal"></a>
+    </div>
+    <div class="show-menu">
+      <span class="glyphicon glyphicon-menu-hamburger" onclick="openNav()" style="color:white;"></span>
+    </div>
+    <div class="collapsible-nav animated fadeIn ">
+      <div class="nav-items ">
+        <ul>
+          <li>
+            <a href="/">
+              <p>HOME</p>
+            </a>
+          </li>
+          <li>
+            <a href="/product">
+              <p>PRODUCT</p>
+            </a>
+          </li>
+          <li>
+            <a href="/support">
+              <p>SUPPORT</p>
+            </a>
+          </li>
+          <li>
+            <a href="/about">
+              <p>ABOUT</p>
+            </a>
+          </li>
+          <li>
+            <a href="/faq">
+              <p>FAQ</p>
+            </a>
+          </li>
+          <a href="/signup">
+            <li id="sign-up-btn">Get a Demo</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<script type="text/javascript">
+
+// this is for responsive navigation.
+function openNav() {
+  document.getElementById("nav-overlay").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("nav-overlay").style.width = "0%";
+}
+</script>

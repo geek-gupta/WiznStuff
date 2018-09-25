@@ -1,0 +1,61 @@
+[{
+    "question": "What is the minimum requirement to install eGlu?",
+    "answer": "You just need a Wi-Fi router with an internet connection to setup eGlu. This is the only requirement.",
+    "id": "q1"
+  },
+  {
+    "question": "What do you mean when you say eGlu is totally wireless?",
+    "answer": "When we say totally wireless, we really mean it. eGlu products are not shipped with any cables or adapters. You either plug in the devices directly into power sockets or they run on battery. eGlu HUB, which is our central controller, is a pluggable device and connects to your Wi-Fi router using Wi-Fi.",
+    "id": "q2"
+  },
+  {
+    "question": "I don’t want to invest a lot of money till I understand the product and my needs. Is that possible?",
+    "answer": "Yes of course. eGlu has been designed to give you that flexibility. And you don’t have to spend big bucks to get started. Buy our affordable starter kits which come pre-configured. Once you know the product, you can purchase additional devices based on your requirements. Adding a new device to your existing kit is very easy. This flexibility allows you to pay for only what you need and when you need.",
+    "id": "q3"
+  },
+  {
+    "question": "What happens when internet is down?",
+    "answer": "eGlu devices operate even without internet connectivity, as long as your phone is connected to the local Wi-Fi network. Only limitation is that you cannot control your devices from outside.",
+    "id": "q4"
+  },
+  {
+    "question": "What happens when there is a power cut?",
+    "answer": "Only devices which need a power back-up is your eGlu HUB and the Wi-Fi router. Since all the security devices are battery operated, your house will remain secured as long as HUB and Wi-Fi router are on a power back-up. A low cost PC power backup can support both HUB and the router for more than 10 hours of power cut.",
+    "id": "q5"
+  },
+  {
+    "question": "Will there be a recurring cost for eGlu products?",
+    "answer": "There is no recurring cost for the eGlu products. Our APP will allow you to control and monitor your devices for the lifetime once you purchase them. In future, we do plan to introduce advanced features which will be chargeable. You could chose to subscribe to them if you find them useful.",
+    "id": "q6"
+  },
+  {
+    "question": "Wouldn’t installing eGlu increase my internet bill?",
+    "answer": "We have developed the complete end-to-end technology which is highly optimized for data transmission. The total data transfer (upload/download) by eGlu HUB would be less than 50MB/month, which is insignificant to impact your internet bill.",
+    "id": "q7"
+  },
+  {
+    "question": "What is the range of eGlu HUB?",
+    "answer": "This is where our technology stands out compared to any other existing low power wireless communication. Our patented RF protocol provides a line-of-sight range of more than 1000 feets. This means your devices will be able to talk to the HUB from any corner of the house, behind multiple walls, without any issues. You would also be able to check the signal strength of each device from the APP just like your mobile phone signals.",
+    "id": "q8"
+  },
+  {
+    "question": "Aren’t the electromagnetic waves emitted by your product harmful for human body?",
+    "answer": "Electromagnetic waves can be harmful if the energy in them is very high e.g. a cellphone tower. eGlu products use very low energy electromagnetic waves for communication, at least 10 times lower than the energy emitted by a mobile phone. Hence they are very safe.",
+    "id": "q9"
+  },
+  {
+    "question": "Are eGlu products secure?",
+    "answer": "We take security very seriously. We have engineered a solution that safeguards your information and ensures that only you, or those to whom you grant access, will have the ability to control your devices. We use state-of-the-art encryption between devices and our HUB; our HUB and our cloud service; and between our mobile applications and our cloud service.",
+    "id": "q10"
+  },
+  {
+    "question": "If battery of a device dies suddenly, wouldn’t my home’s security be compromised?",
+    "answer": "Each battery operated device monitors its battery at a regular interval. It can accurately tell when the battery is going to be discharged. The battery health status for any device can be directly seen from the APP. But more than that, the device will proactively send alerts to the user to replace the battery. You would get enough reminders to replace the battery before it dies down.",
+    "id": "q11"
+  },
+  {
+    "question": "If my eGlu devices get stolen, can someone use them?",
+    "answer": "Once eGlu devices are linked to your account, nobody else can use them. If you want to re-sell or give away your devices, you will have to transfer the ownership using the APP for someone else to use your devices.",
+    "id": "q12"
+  }
+]

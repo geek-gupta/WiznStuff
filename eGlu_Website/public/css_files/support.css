@@ -1,0 +1,240 @@
+/* This css file is for SUPPORT page */
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Work Sans', sans-serif;
+  font-smoothing: antialiased;
+  /* border: 1px solid lightgray; */
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #fafafa;
+}
+
+/* --------------------------- */
+
+.wrapper {
+  height: auto;
+  width: 100%;
+}
+
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #0086B2;
+}
+
+.hero-section-content {
+  height: 85%;
+  width: 100%;
+}
+
+.main-content-section {
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 100px 0 100px 0;
+}
+
+.content-nav {
+  height: auto;
+  width: 15%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: right;
+  flex-flow: column;
+}
+
+.content-nav>button {
+  text-align: right;
+  color: rgba(0, 0, 0, 1);
+  border: none;
+  padding-right: 10px;
+  border-right: 2px solid lightgray;
+  background: none;
+  font-size: 1.5em;
+  margin: 20px;
+  outline: none !important;
+}
+
+.active {
+  border-right-color: #00BFFF !important;
+  border-bottom-color: #00BFFF !important;
+}
+
+.content-section {
+  height: auto;
+  padding-left: 50px;
+  width: 85%;
+  min-height: 80%;
+}
+
+.user-manual-section, .other-stuff-section {
+  display: none;
+}
+
+.active2 {
+  display: block;
+}
+
+.installation-section {
+  height: auto;
+  width: 100%;
+}
+
+.videos-main-content {
+  height: auto;
+  width: 95%;
+  margin-bottom: 50px;
+}
+
+.category-header {
+  height: auto;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.category-header>h1 {
+  font-size: 2.5em;
+  color: #00BFFF;
+}
+
+.video-content-grid {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  height: 340px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-right: 30px;
+}
+
+.grid-item iframe {
+  height: 85%;
+  width: 100%;
+}
+
+.grid-item .video-title {
+  height: 15%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.user-manual-section, .other-stuff-section {
+  width: 100%;
+  height: auto;
+}
+
+.manual-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  height: auto;
+  width: 100%;
+}
+
+.manual-content a {
+  height: auto;
+  width: auto;
+  min-width: 100px;
+  padding: 10px;
+  border: 2px solid lightgray;
+  border-radius: 25px;
+  font-size: 18px;
+  color: black;
+  margin: 0 30px 30px 0;
+  text-decoration: none !important;
+  background-color: transparent;
+}
+
+.manual-content a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1210px) {
+  .main-content-section {
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .content-nav {
+    width: 80%;
+    justify-content: center;
+    position: inherit;
+    flex-flow: row;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .content-nav button {
+    border: none;
+    border-bottom: 2px solid lightgray;
+  }
+  .installation-section {
+    padding-left: 0px;
+    width: 100%;
+  }
+  .content-section {
+    width: 100%;
+  }
+  .category-header {
+    text-align: center;
+    width: 100%;
+  }
+  .video-content-grid {
+    justify-content: space-around;
+  }
+  .grid-item {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .videos-main-content, .content-nav {
+    width: 100%;
+  }
+  .content-section {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .content-nav button {
+    font-size: 1.2em;
+  }
+  .grid-item {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .content-nav button {
+    margin: 10px;
+  }
+}

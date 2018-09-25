@@ -1,0 +1,294 @@
+<!-- This template looks like this
+
+|----------------------------------------------------------------------------|
+|                                                                            |
+|                                   Header                                   |
+|                                                                            |
+|                                                                            |
+|           itemImage             itemImage             itemImage            |
+|                                                                            |
+|            title                 title                 title               |
+|                                                                            |
+|        MainPromotText        MainPromotText         MainPromotText         |
+|                                                                            |
+|                                                                            |
+|                                                                            |
+|           itemImage             itemImage             itemImage            |
+|                                                                            |
+|            title                 title                 title               |
+|                                                                            |
+|        MainPromotText        MainPromotText         MainPromotText         |
+|                                                                            |
+|                                                                            |
+|----------------------------------------------------------------------------|
+
+ -->
+
+<style type="text/css">
+  @import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200');
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Work Sans', sans-serif;
+    font-smoothing: antialiased;
+
+    /* border: 1px solid lightgray; */
+  }
+
+  body,
+  html {
+    height: 100%;
+    width: 100%;
+    -webkit-animation: fadein 1.5s;
+    -moz-animation: fadein 1.5s;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #fff;
+  }
+
+  .wrapper {
+    height: auto;
+    width: 100%;
+  }
+
+  .header-text {
+    font-weight: 300;
+    font-size: 5em;
+  }
+
+  .para-text {
+    font-weight: 300;
+    font-size: 2em;
+  }
+
+  .btn {
+    width: 130px;
+    margin: 10px !important;
+    margin-top: 20px !important;
+    background-color: DodgerBlue;
+    border-radius: 30px !important;
+    border: 0px !important;
+    color: #ffffff !important;
+    padding: 12px 16px;
+    font-size: 16px !important;
+    cursor: pointer;
+  }
+
+  .btn span {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: white;
+  }
+
+  .btn:hover {
+    background-color: #394F42;
+  }
+
+  .service-btns a {
+    text-decoration: none;
+    text-align: center;
+  }
+
+
+
+  .third-section-features {
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-color: #EBEEF2;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .feature-header {
+    margin-bottom: 50px;
+  }
+
+  .grid-container-third-sec {
+    /* position: relative; */
+    height: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .grid-item {
+    min-height: 30vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .grid-item img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .grid-item h3 {
+    font-size: 2.5em;
+    margin-top: 30px;
+    color: #1E2220;
+    font-weight: 300;
+  }
+
+  .grid-item p {
+    font-size: 1.5em;
+    margin-top: 20px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 1);
+  }
+
+  @media screen and (max-width: 1100px) {
+    .header-text {
+      font-weight: 300;
+      font-size: 4em;
+    }
+    .para-text {
+      font-weight: 300;
+      font-size: 1.5em;
+    }
+    .grid-item {
+      padding: 10px;
+    }
+    .grid-item h3 {
+      font-size: 2em;
+    }
+    .grid-item p {
+      font-size: 1.2em;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .grid-container-third-sec {
+      width: 90%;
+    }
+  }
+
+
+  @media screen and (max-width: 800px) {
+    .header-text {
+      font-weight: 300;
+      font-size: 3em;
+    }
+    .service-btns {
+      margin-bottom: 20px;
+    }
+
+  }
+
+
+
+  @media screen and (max-width: 700px) {
+    .grid-container-third-sec {
+      grid-template-columns: repeat(2, auto);
+    }
+    .grid-item {
+      min-height: 20vh;
+    }
+    .grid-item h3,
+    .grid-item p {
+      margin-top: 10px;
+    }
+  }
+
+
+  @media screen and (max-width: 500px) {
+    .feature-header {
+      margin-bottom: -30px;
+    }
+    .grid-item p {
+      display: none;
+    }
+    .grid-item h3 {
+      font-size: 1.5em;
+    }
+
+  }
+
+  @media screen and (max-width: 550px) {
+    .platform-grid-item img {
+      height: 60px;
+      width: 60px;
+    }
+    .platform-grid-item h3 {
+      font-size: 1.2em;
+    }
+  }
+</style>
+
+<!-- Or if you want item to be dynamic.
+
+  Then replace all the div with className of grid-item and place the following code:
+
+  Here featureItem is a variable of array type having object elements with data as:
+  featureItem : [
+    {
+    "imageUrl": urlGoesHere,
+    "item1": "Item1NameGoesHere",
+    "item1Text": "FeatureExplained"
+    },
+  do same if you want more than one
+  ]
+
+{{#each featureItem}}
+  <div class="grid-item">
+    <img src="{{imageUrl}}" alt="featureImage">
+    <h3>{{item1}}</h3>
+    <p>{{item1Text}}</p>
+  </div>
+{{/each}}
+
+
+{{! }} this block is for commenting in handlebars(hbs) file
+ -->
+
+
+
+<div class="wrapper">
+  <div class="third-section-features">
+    <div class="feature-header">
+      <h1 class="header-text">{{headerText}}</h1>
+    </div>
+    <div class="grid-container-third-sec">
+      <div class="grid-item">
+        <img src="../Asset/icons/wireless.png" alt="">
+        <h3>{{item1}}</h3>
+        <p>{{item1Text}}</p>
+      </div>
+      <div class="grid-item">
+        <img src="../Asset/icons/scalable.png" alt="">
+        <h3>{{item2}}</h3>
+        <p>{{item2Text}}</p>
+      </div>
+      <div class="grid-item">
+        <img src="../Asset/icons/affordable.png" alt="">
+        <h3>{{item3}}</h3>
+        <p>{{item3Text}}</p>
+      </div>
+      <div class="grid-item">
+        <img src="../Asset/icons/single-app.png" alt="">
+        <h3>{{item4}}</h3>
+        <p>{{item4Text}}</p>
+      </div>
+      <div class="grid-item">
+        <img src="../Asset/icons/retrofit.png" alt="">
+        <h3>{{item5}}</h3>
+        <p>{{item5Text}}</p>
+      </div>
+      <div class="grid-item">
+        <img src="../Asset/icons/easy-to-use.png" alt="">
+        <h3>{{item6}}</h3>
+        <p>{{item6Text}}</p>
+      </div>
+    </div>
+  </div>
+</div>

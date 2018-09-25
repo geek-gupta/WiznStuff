@@ -1,0 +1,120 @@
+<html lang="en" class="no-js">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.8/css/uikit.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css_files/faq.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>FAQ</title>
+</head>
+
+<body>
+
+  <!--
+    Documentation:
+
+    This file has a total of 2 sections -> The top-container div and the sidebar-container div.
+
+    The questions and answers of the FAQ are stored on a separate file in the data_files directory. The file format is JSON.
+    To add or remove any questions from the FAQ page, it must be done in that file by adding a new child to the JSON tree in the following format:
+
+        {
+          "question": "What is your question?",
+          "answer": "This is my answer",
+          "id": "q13"
+        }
+
+    This must be added to the end of the JSON tree by adding a comma after the last child.
+
+  -->
+
+  {{> navbar app-logo-image= "../Asset/logos/logo-blue.png"}}
+
+  <div class="main-container">
+
+    <div class="top-container uk-card uk-card-default">
+      <div class="faq-header">
+        <h2>Browse by questions</h2>
+      </div>
+      {{#each this}}
+        <div class="questions" id="question{{this.id}}"><a href="javascript:void(0);">{{this.question}}</a></div>
+      {{/each}}
+      <hr>
+      <div class="qanda">
+        <div class="qanda-header">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        {{#each this}}
+          <div class="questionSecondary" id="{{this.id}}"><a href="javascript:void(0);">{{this.question}}</a></div>
+          <div class="answerSecondary">{{this.answer}}</div>
+        {{/each}}
+      </div>
+    </div>
+
+    <div class="sidebar-container">
+      <div class="sidebar-heading">
+        <h1>Reach us</h1>
+      </div>
+      <div class="sidebar-content">
+
+        <div id="contact-card">
+
+          <div class="contact-info-content">
+            <div class="contact-info-email">
+              <div>
+                <i style="font-size:22px;" class="fas fa-envelope"></i>
+              </div>
+              <div><span class="contact-info-text"><a href="mailto:contact@myeglu.com">contact@myeglu.com</a></span></div>
+            </div>
+            <div class="contact-info-phone">
+              <div><i style="font-size:22px;" class="fas fa-phone fa-flip-horizontal"></i></div>
+              <div><span class="contact-info-text">+91-7022765226</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  {{> footer}}
+
+  <script>
+    console.log(window.innerHeight);
+
+    for (let i = 1; i < 13; i++) {
+      console.log("#questionq" + i);
+      $("#questionq" + i).click(function() {
+        removeAllLabels();
+        $('html, body').animate({
+          scrollTop: $("#q" + i).offset().top - window.innerHeight / 2
+        }, 0);
+        $("#q" + i + " a").css('color', '#337abe');
+      });
+    }
+
+    function removeAllLabels() {
+      for (let i = 1; i < 13; i++) {
+        $("#q" + i + " a").css('color', '#000');
+      }
+    }
+
+    for (let i = 1; i < 13; i++) {
+      $("#q" + i).click(function() {
+        removeAllLabels();
+        $('html, body').animate({
+          scrollTop: $("#questionq" + i).offset().top - window.innerHeight / 2
+        }, 0);
+      });
+    }
+  </script>
+
+</body>
+
+</html>

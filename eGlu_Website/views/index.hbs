@@ -1,0 +1,209 @@
+{{> header
+   title = "eGlu-Smart Home"
+   cssFileName = "index.css" }}
+
+<body>
+
+  <!-- If you have to change any text or to add, go to indexData.json file located in data_files folder.
+  Add a JSON String "variablename": "value" or make changes in any existing varibale to change it's data.
+  if Added extra variable there, use syntax: {{variablename}}
+  -->
+  <main>
+    <!-- Hero Section Begins -->
+    <div class="wrapper">
+      <div class="hero-section">
+        <!-- header starts -->
+        <header>
+          <!-- nav starts  pass the desired logo you want based on the background color-->
+          {{> navbar app-logo-image= "../Asset/logos/logo.png"}}
+          <!-- nav closed -->
+        </header>
+        <!-- hader closed -->
+        <div class="hero-section-content">
+          <div class="hero-section-content-one">
+            <div class="content-one-text animated fadeIn">
+              <p id="shownPromotText" style="color: rgba(255, 255, 255, 1);">{{sectionOnePromoTextPartOne}}{{sectionOnePromoTextPartTwo}}</p>
+              <p id="hiddenpromoText" style="color: rgba(255, 255, 255, 1);">{{sectionOnePromoTextPartOne}}<br>{{sectionOnePromoTextPartTwo}}</p>
+              <div style="margin-top:20px" class="button-holder-herosec">
+                <button style="margin-top:100px;" class="btn"><i class="fa fa-play"></i><span>{{heroSectionButtonOne}}</span></button>
+              </div>
+            </div>
+            <div class="content-one-image">
+              <img style=" height: 100%; width: 100%;" src="../Asset/background_imgs/sketch.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section Ends -->
+
+    <!-- eGlu Introduction Section Begins, Section two  -->
+    <div class="wrapper">
+      <div class="eglu-intro">
+        <div class="eglu-intro-image"></div>
+        <div class="eglu-intro-text">
+          <h1 class="header-text">{{sectionTwoPromoText}}</h1>
+          <p class="para-text">{{sectionTwoContentText}}</p>
+          <div class="service-btns">
+            <a  href="/smart-home" class="btn"></i><span>{{sectionTwoButtonOne}}</span></a>
+            <a href="/home-security" class="btn"></i><span>{{sectionTwoButtonTwo}}</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- eGlu Introduction Section Ends -->
+
+    <!-- Feature Section Begins, Third Section -->
+    <div class="wrapper">
+      <div class="third-section-features">
+        <div class="feature-header">
+          <h1 class="header-text">{{sectionThirdPromoText}}</h1>
+        </div>
+        <div class="grid-container-third-sec">
+          <div id="grid-item-one" class="grid-item">
+            <img src="../Asset/icons/wireless.png" alt="">
+            <h3>Wireless</h3>
+            <p>{{wirelessFeatureText}}</p>
+          </div>
+          <div id="grid-item-two" class="grid-item">
+            <img src="../Asset/icons/scalable.png" alt="">
+            <h3>Scalable</h3>
+            <p>{{scalableFeatureText}}</p>
+          </div>
+          <div id="grid-item-three" class="grid-item">
+            <img src="../Asset/icons/affordable.png" alt="">
+            <h3>Affordable</h3>
+            <p>{{affordableFeatureText}}</p>
+          </div>
+          <div id="grid-item-four" class="grid-item">
+            <img src="../Asset/icons/single-app.png" alt="">
+            <h3>Single App</h3>
+            <p>{{singleAppFeatureText}}</p>
+          </div>
+          <div id="grid-item-five" class="grid-item">
+            <img src="../Asset/icons/retrofit.png" alt="">
+            <h3>Retrofit</h3>
+            <p>{{retrofitFeatureText}}</p>
+          </div>
+          <div id="grid-item-six" class="grid-item">
+            <img src="../Asset/icons/easy-to-use.png" alt="">
+            <h3>Easy to use</h3>
+            <p>{{easyToUseFeatureText}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Feature Section Ends, Third Section -->
+
+    <!-- Product Section Begins, Fourth Section -->
+    <div class="wrapper">
+      <div class="fourth-section">
+        <h1 class="header-text">{{sectionFourPromoText}}</h1>
+        <div class="product-section-family-image"></div>
+        <div class="product-section-text">
+          <p class="para-text">{{sectionFourContentText}}</p>
+          <a href="/product" style="width: auto;padding: 10px; " class="btn"> <i class="fa fa-crosshairs"></i><span>{{sectionFourButtonOne}}</span></a>
+        </div>
+      </div>
+    </div>
+    <!-- Product Section Ends, Fourth Section -->
+
+    <!-- eGlu Platform Section Begins, Fifth Section-->
+    <div class="wrapper">
+      <div class="platform-section">
+        <h1 class="header-text">{{sectionFivePromoText}}</h1>
+        <div id="platform-two" class="platform-section-div">
+          <div class="platform-two-content">
+            <h1>{{sectionFivePromoText}}</h1>
+            <div class="platform-section-two-intro">
+              <p>{{sectionFiveContentText}}</p>
+              <a href="#" class="btn"><i class="fa fa-crosshairs"></i><span>{{sectionFiveButtonOne}}</span></a>
+            </div>
+          </div>
+        </div>
+        <div id="platform-one" class="platform-section-div">
+          <div class="platform-grid-container">
+            <div class="platform-grid-item">
+              <img src="../Asset/images/voice-assistant.png" alt="">
+              <h3>Voice Assistant</h3>
+            </div>
+            <div class="platform-grid-item">
+              <img src="../Asset/images/gate-control.png" alt="">
+              <h3>Gate Automation</h3>
+            </div>
+            <div class="platform-grid-item">
+              <img src="../Asset/images/curtain-control.png" alt="">
+              <h3>Curtain Control</h3>
+            </div>
+            <div class="platform-grid-item">
+              <img src="../Asset/images/door-lock.png" alt="">
+              <h3>Door Locks</h3>
+            </div>
+            <div class="platform-grid-item">
+              <img src="../Asset/images/infra-red-control.png" alt="">
+              <h3>Infra-Red Control</h3>
+            </div>
+            <div class="platform-grid-item">
+              <img src="../Asset/images/google-watch.png" alt="">
+              <h3>Smart Watch</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- eGlu Platform Section Ends, Fifth Section-->
+
+    <!-- Google Alexa Voice Assistant Section Begins, Sixth Section -->
+    <div class="wrapper">
+      <div class="sixth-section-google-alexa">
+        <div class="sixth-section-one">
+          <div id="googleAssistantPic" class="sixth-section-one-first">
+          </div>
+          <div id="googleAssistant" class="sixth-section-one-second">
+          </div>
+        </div>
+        <div class="sixth-section-two">
+          <h3>{{sectionSixPromoText}}</h3>
+          <div class="alexa-google-section-text">
+            <p>{{sectionSixContentText}}</p>
+            <button class="btn"><i class="	fa fa-play"></i><span>{{sectionSixButtonOne}}</span></button>
+          </div>
+        </div>
+        <div class="sixth-section-three">
+          <div id="amazonAlexPic" class="sixth-section-three-first">
+          </div>
+          <div id="amazonAlexa" class="sixth-section-three-second">
+          </div>
+        </div>
+      </div>
+      <div class="sixth-section-google-alexa-hidden">
+        <h1 class="header-text">{{sectionSixHiddenHeader}}</h1>
+        <div class="google-alex-container">
+          <div class="sixth-section-one">
+            <div id="googleAssistantPic" class="sixth-section-one-first">
+            </div>
+            <div id="googleAssistant" class="sixth-section-one-second">
+            </div>
+          </div>
+          <div class="sixth-section-three">
+            <div id="amazonAlexPic" class="sixth-section-three-first">
+            </div>
+            <div id="amazonAlexa" class="sixth-section-three-second">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Google Alexa Voice Assistant Section Ends, Sixth Section -->
+  </main>
+
+  <!-- Footer Begins, If you want to make changes to footer section go to view/partial.footer.hbs.
+  All changes made will reflect on every footer as same footer is used everywhere.-->
+  {{> footer }}
+  <!-- Footer Ends -->
+
+
+
+</body>
+
+</html>

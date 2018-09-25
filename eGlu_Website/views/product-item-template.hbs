@@ -1,0 +1,160 @@
+{{> header
+   title = headerText
+   cssFileName = "product-item.css" }}
+
+<body>
+
+
+  <!--
+
+     If you want to change any text or to add, go to specificProductfilename.json like {hub-data.json, panic-alarm-data.json} file located in data_files folder.
+    Add a JSON String "variablename": "value" or make changes in any existing varibale to change it's data.
+    To add data, just add a string there like:
+
+    "requirements": [
+      "Internet connected Wi-Fi router",
+      "eGlu APP for iOS or Android"
+    ]
+    vvvvvvvvvvvvvvvvvvvvvvvvv
+    "requirements": [
+      "Internet connected Wi-Fi router",
+      "eGlu APP for iOS or Android",
+      "New Data Added here"
+    ]
+
+    Do the same for everyone if data is to be added or add to specific section only.
+
+    -->
+
+  <main>
+
+    <!-- This section includes navbar and intro to product{ Title, intro text and productImage} -->
+    <div class="wrapper">
+      <div class="hero-section">
+        <!-- header starts -->
+        <header>
+          <!-- nav starts -->
+          <!-- Based on the background of hero-section pass the best suited eGlu logo -->
+          {{> navbar
+            app-logo-image="../Asset/logos/logo-blue.png"
+          }}
+          <!-- nav closed -->
+        </header>
+        <!-- hader closed -->
+        <div class="hero-section-content-one">
+          <div class="product-image" style="background-image: url({{imageUrl}})">
+
+          </div>
+          <div class="product-main-content">
+            <div class="product-main-header">
+              <h1>{{headerText}} </h1>
+            </div>
+            <div class="product-main-text">
+              <h3>{{PromoText}}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero section ends -->
+
+
+    <!-- Same div { simple-template-section } is used for every section here-->
+
+    <!-- Requirements section begins-->
+    <div class="simple-template-section">
+      <div class="simple-template-header">
+        <h1 class="header">Requirements</h1>
+      </div>
+      <div class="simple-template-content">
+        <ul>
+          {{#each requirements}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <!-- Requirements section ends-->
+
+    <!-- Technical table section begins -->
+    <div class="simple-template-section">
+      <div class="simple-template-header">
+        <h1 class="header">Technical Details</h1>
+      </div>
+      <div id="table-content" class="simple-template-content">
+        <table class="technical-table">
+          <thead id="table-header">
+            {{#each tableData.titles}}
+              <th>{{this}}</th>
+            {{/each}}
+          </thead>
+          <tbody id="table-body">
+            {{#each tableData.tableObjs}}
+              <tr>
+                <td>{{this.parameter}}</td>
+                <td>{{this.detail}}</td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+    <!-- Technical table section ends -->
+
+    <!-- Safety Instructions section begins -->
+    <div class="simple-template-section">
+      <div class="simple-template-header">
+        <h1 class="header">Safety Instructions</h1>
+      </div>
+      <div class="simple-template-content">
+        <ul>
+          {{#each safetyData}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <!-- Safety Instructions section ends -->
+
+    <!-- Warning section begins -->
+    <div class="simple-template-section">
+      <div class="simple-template-header">
+        <h1 class="header">Warnings</h1>
+      </div>
+      <div class="simple-template-content">
+        <ul>
+          {{#each warningData}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <!-- Warning section ends -->
+
+    <!-- whatInBox section begins -->
+    <div class="simple-template-section">
+      <div class="simple-template-header">
+        <h1 class="header">What's in the box</h1>
+      </div>
+      <div class="simple-template-content">
+        <ul>
+          {{#each whatInBox}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <!-- whatInBox section ends -->
+
+  </main>
+
+
+  <!-- footer begins -->
+  {{> footer}}
+  <!-- footer ends -->
+
+
+</body>
+
+</html>

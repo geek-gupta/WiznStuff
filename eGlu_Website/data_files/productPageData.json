@@ -1,0 +1,104 @@
+{
+  "heroSectionPromoText": "  text Goes Here!!Product Section text Goes Here!!",
+  "gridItemArray": [
+    {
+      "productItemImageUrl": "../Asset/images/products/hub-300px.png",
+      "productUrlText": "hub",
+      "productItemName": "HUB"
+    },
+    {
+      "productItemImageUrl": "../Asset/images/products/6amp-300px.png",
+      "productUrlText": "smart-plug-6a",
+      "productItemName": "Smart Plug 6A"
+    },
+    {
+      "productItemImageUrl": "../Asset/images/products/16amp-300px.png",
+      "productUrlText": "smart-plug-16a",
+      "productItemName": "Smart Plug 16A"
+    },
+    {
+      "productItemImageUrl": "../Asset/images/products/tag-300px.png",
+      "productUrlText": "tag",
+      "productItemName": "TAG"
+    },
+    {
+      "productItemImageUrl": "../Asset/images/products/pa-300px.png",
+      "productUrlText": "panic-alarm",
+      "productItemName": "Panic Alarm"
+    },
+    {
+      "productItemImageUrl": "../Asset/images/products/ms-300px.png",
+      "productUrlText": "motion-sensor",
+      "productItemName": "Motion Sensor"
+    },
+    {
+      "productItemImageUrl": "../Asset/images/products/hub-300px.png",
+      "productUrlText": "hub",
+      "productItemName": "HUB"
+    },{
+      "productItemImageUrl": "../Asset/images/products/hub-300px.png",
+      "productUrlText": "hub",
+      "productItemName": "HUB"
+    },
+    {
+      "productItemImageUrl": "../Asset/images/products/6amp-300px.png",
+      "productUrlText": "smart-plug-6a",
+      "productItemName": "Smart Plug 6A"
+    },
+    {
+      "productItemImageUrl": "../Asset/images/products/16amp-300px.png",
+      "productUrlText": "smart-plug-16a",
+      "productItemName": "Smart Plug 16A"
+    },
+    {
+      "productItemImageUrl": "../Asset/images/products/tag-300px.png",
+      "productUrlText": "tag",
+      "productItemName": "TAG"
+    },
+    {
+      "productItemImageUrl": "../Asset/images/products/pa-300px.png",
+      "productUrlText": "panic-alarm",
+      "productItemName": "Panic Alarm"
+    },
+    {
+      "productItemImageUrl": "../Asset/images/products/ms-300px.png",
+      "productUrlText": "motion-sensor",
+      "productItemName": "Motion Sensor"
+    },
+    {
+      "productItemImageUrl": "../Asset/images/products/hub-300px.png",
+      "productUrlText": "hub",
+      "productItemName": "HUB"
+    },
+    {
+      "productItemImageUrl": "../Asset/images/products/hub-300px.png",
+      "productUrlText": "hub",
+      "productItemName": "HUB"
+    },
+    {
+      "productItemImageUrl": "../Asset/images/products/6amp-300px.png",
+      "productUrlText": "smart-plug-6a",
+      "productItemName": "Smart Plug 6A"
+    },
+    {
+      "productItemImageUrl": "../Asset/images/products/16amp-300px.png",
+      "productUrlText": "smart-plug-16a",
+      "productItemName": "Smart Plug 16A"
+    },
+    {
+      "productItemImageUrl": "../Asset/images/products/tag-300px.png",
+      "productUrlText": "tag",
+      "productItemName": "TAG"
+    },
+    {
+      "productItemImageUrl": "../Asset/images/products/pa-300px.png",
+      "productUrlText": "panic-alarm",
+      "productItemName": "Panic Alarm"
+    },
+    {
+      "productItemImageUrl": "../Asset/images/products/ms-300px.png",
+      "productUrlText": "motion-sensor",
+      "productItemName": "Motion Sensor"
+    }
+  ]
+}

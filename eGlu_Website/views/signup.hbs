@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{headerText}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Gaurav Kumar">
+  <meta name="keywords" content="eGlu, eglu, eGlu-Smart, Home-Automation, Smart Home,eGlu Products">
+  <meta name="description" content="eGlu Products">
+  <link rel="stylesheet" href="/css_files/signup.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+
+
+  <main>
+    <div class="wrapper">
+      <div class="hero-section">
+        <!-- header starts -->
+        <header>
+          <!-- nav starts -->
+          {{> navbar
+            app-logo-image="../Asset/logos/logo-blue.png"
+          }}
+          <!-- nav closed -->
+        </header>
+        <!-- hader closed -->
+        <div class="signup-section-content">
+          <div class="signup-main-image">
+
+          </div>
+          <div class="signup-main-content">
+            <h1 class="header">Sign Up for Demo</h1>
+            <form class="signup-form" action="/getDemoData" method="POST">
+              <input type="text" name="name"  placeholder="Name">
+              <input type="email" name="email" placeholder="email">
+              <input type="tel" name="mobumber" placeholder="Phone Number">
+              <input type="text" name="city" placeholder="City">
+              <input type="number" name="pincode" placeholder="Pin Code">
+              <div class="g-recaptcha" data-sitekey="6LfrZWcUAAAAAOUpywU1SkRXaCJPcgAzcai94A9O"></div>
+              <input type="submit" value="Sign Up"></input>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  {{> footer}}
+
+
+</body>
+
+</html>

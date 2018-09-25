@@ -1,0 +1,62 @@
+{
+  "imageUrl": "https://myeglu.com/img/hub-transparent_1.png",
+  "headerText": "eGlu HUB",
+  "PromoText": "eGlu HUB acts as a communication gateway between the all eGlu devices installed at home and your Wi-Fi router.It is a pluggable device and draws power from the AC wall outlet. A push button provided on the HUB can be used to re-configure the HUB if the Wi-Fi settings of your router are changed.",
+  "tableData":{
+    "titles": [
+      "Parameter",
+      "Details"
+    ],
+    "tableObjs": [{
+        "parameter": "Power Input",
+        "detail": "220-240V AC, 50 HZ"
+      },
+      {
+        "parameter": "Power consumption",
+        "detail": "1W"
+      },
+      {
+        "parameter": "Operating Temperature",
+        "detail": "0ºC to 45°C"
+      },
+      {
+        "parameter": "Wireless Protocol",
+        "detail": "WiZN’s Glu™ , Wi-Fi"
+      },
+      {
+        "parameter": "Model Number",
+        "detail": "EGHUB01"
+      },
+      {
+        "parameter": "Dimensions",
+        "detail": "82 x 48 x 45 mm"
+      },
+      {
+        "parameter": "Weight",
+        "detail": "75 grams"
+      },
+      {
+        "parameter": "color",
+        "detail": "White"
+      }
+    ]
+  },
+  "requirements": [
+    "Internet connected Wi-Fi router",
+    "eGlu APP for iOS or Android"
+  ],
+  "safetyData": [
+    "eGlu products are designed for indoor use only. They are neither waterproof nor water resistant. Please do not use these products outdoors or near water. Do not expose them to dripping or splashing of water or any other type of liquid",
+    "Clean eGlu products only with a soft and dry cloth.",
+    "Do not install eGlu products near heat sources such as stoves, radiators or any other appliances which generate heat",
+    "Only use attachments and accessories specified by the manufacturer"
+  ],
+  "warningData": [
+    "Always use leak-proof branded batteries. Substandard batteries can cause functional and performance issues.",
+    "When TAG is used as a door sensor, it can give a false event when a magnet is brought closer to it."
+  ],
+  "whatInBox": [
+    "eGlu HUB",
+    "Quick User Guide"
+  ]
+}

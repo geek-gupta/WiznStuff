@@ -1,0 +1,220 @@
+/* This css file is for PRODUCT page */
+
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Work Sans', sans-serif;
+  font-smoothing: antialiased;
+  font-weight: 300;
+  /* border: 1px solid lightgray; */
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #fafafa;
+}
+
+/* --------------------------- */
+
+.wrapper {
+  height: auto;
+  width: 100%;
+}
+
+.header-text {
+  font-weight: 300;
+  font-size: 5em;
+}
+
+.para-text {
+  font-weight: 300;
+  font-size: 2em;
+}
+
+.hero-section {
+  height: auto;
+  width: 100%;
+  background-color: gray;
+}
+
+.hero-section-content {
+  height: 500px;
+  width: 100%;
+  background-image: url("../Asset/background_imgs/familyImage.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.hero-section-promo-text {
+  height: 200px;
+  width: 50%;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  color: white;
+}
+
+
+.grid-product {
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+.grid-product-container {
+  padding: 100px 0 100px 0;
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(4, auto);
+}
+
+.grid-item {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column;
+  -webkit-box-shadow: -8px 9px 11px -1px rgba(109, 117, 143, 0.08);
+  -moz-box-shadow: -8px 9px 11px -1px rgba(109, 117, 143, 0.08);
+  box-shadow: -8px 9px 11px -1px rgba(109, 117, 143, 0.08);
+  background-color: #E8E8E8;
+}
+
+.product-grid-image {
+  width: 100%;
+  height: 70%;
+}
+
+.product-grid-text {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-grid-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn {
+  color: rgba(0, 0, 0, 0.6);
+  height: auto;
+  width: auto;
+  min-width: 150px;
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+  border-radius: 25px !important;
+  border: 1px solid rgba(0, 0, 0, 0.4) !important;
+}
+
+@-moz-document url-prefix() {
+  li p, #sign-up-btn, .content-one-text p, .btn span {
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .grid-item {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .grid-product-container {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .grid-product-container {
+    padding: 50px 0 50px 0;
+  }
+  .grid-item {
+      width: 250px;
+      height: 250px;
+    }
+    .btn {
+      min-width: 120px;
+      font-size: 1em !important;
+    }
+}
+@media screen and (max-width: 900px) {
+  .grid-item {
+      width: 200px;
+      height: 200px;
+    }
+    .hero-section-content {
+      height: 300px;
+    }
+    .hero-section-promo-text {
+      width: 80%;
+    }
+}
+@media screen and (max-width: 750px) {
+  .grid-product-container {
+    grid-template-columns: repeat(2, auto);
+  }
+  .grid-item {
+      width: 250px;
+      height: 250px;
+    }
+    .hero-section-content {
+      height : 250px;
+    }
+}
+@media screen and (max-width: 600px) {
+
+  .grid-item {
+      width: 200px;
+      height: 200px;
+    }
+  .hero-section-promo-text h2{
+    font-size: 1.6em !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .grid-product-container {
+    grid-gap: 30px;
+  }
+  .grid-item {
+      width: 160px;
+      height: 200px;
+    }
+    .btn {
+      min-width: 100px;
+      font-size: 0.8em !important;
+    }
+    .hero-section-content {
+      height: 200px;
+    }
+}
+@media screen and (max-width: 400px) {
+  .grid-product-container {
+    grid-gap: 20px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .grid-product-container {
+    grid-gap: 15px;
+  }
+  .grid-item {
+      width: 140px;
+      height: 170px;
+    }
+}

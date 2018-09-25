@@ -1,0 +1,63 @@
+{{> header
+   title = "eGlu Products"
+   cssFileName = "product.css" }}
+
+<!--
+
+  To add new product to product page:
+
+  Go to productPgaeData.json and add follwing to existing data:
+
+  {
+    "productItemImageUrl": "productImageURL",
+    "productUrlText": "textThatWillAppearInTheURL", {go to app/products/index.js and read the documentation there}
+    "productItemName": "ProductNameYouWantTODisplay"
+  }
+
+  To delete, just delete the whole object
+
+
+-->
+
+<body>
+  <main>
+    <div class="wrapper">
+      <div class="hero-section">
+        <!-- header starts -->
+        <header>
+          <!-- nav starts -->
+          {{> navbar app-logo-image = "../Asset/logos/logo.png"}}
+          <!-- nav closed -->
+        </header>
+        <!-- hader closed -->
+        <div class="hero-section-content">
+        </div>
+        <div class="hero-section-promo-text">
+          <h2>{{heroSectionPromoText}}</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="grid-product">
+        <div class="grid-product-container">
+          {{#each gridItemArray}}
+            <div class="grid-item">
+              <div style="background-image: url({{productItemImageUrl}})" class="product-grid-image">
+              </div>
+              <div class="product-grid-text">
+                <a href="/product/{{productUrlText}}" class="btn">{{productItemName}}</a>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </main>
+
+  {{> footer}}
+
+
+</body>
+
+</html>

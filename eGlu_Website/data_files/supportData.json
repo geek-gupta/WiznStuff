@@ -1,0 +1,72 @@
+{
+
+  "videoCategoryDataArray": [{
+      "categoryTitle": "Videos-1",
+      "categoryVideos": [{
+          "url": "https://www.youtube.com/embed/WkuXY9ujDkw?rel=0",
+          "title": "Lightning Automation"
+        },
+        {
+          "url": "https://www.youtube.com/embed/KLVf7TZi_rg?rel=0",
+          "title": "Adding and Configuring TAG"
+        },
+        {
+          "url": " https://www.youtube.com/embed/mIWm5SadIZc?rel=0",
+          "title": "Amazon Alexa Integration"
+        }
+      ]
+    },
+    {
+      "categoryTitle": "Videos-2",
+      "categoryVideos": [{
+          "url": "https://www.youtube.com/embed/-Lii6BNhofM?rel=0",
+          "title": "Work with Google Assistant"
+        },
+        {
+          "url": "https://www.youtube.com/embed/JD8Po5SSCgY?rel=0",
+          "title": "Motion Controller"
+        }
+      ]
+    },
+    {
+      "categoryTitle": "Videos-3",
+      "categoryVideos": [{
+          "url": "https://www.youtube.com/embed/Oe8_zM55zno?rel=0",
+          "title": "Home, Smart Home!"
+        },
+        {
+          "url": "https://www.youtube.com/embed/OCxrz-vXfg4?rel=0",
+          "title": "In-Wall Switch Installation"
+        }
+      ]
+    }
+  ],
+  "userManulaDataArray": [{
+      "categoryTitle": "eGlu Manual-1",
+      "categoryUrlLinks": [{
+          "urlLink": "/support/pdf/eglu",
+          "pdfTitle": "eGlu brochure 1"
+        },
+        {
+          "urlLink": "/support/pdf/eglu1",
+          "pdfTitle": "eGlu brochure 2"
+        }
+      ]
+    },
+    {
+      "categoryTitle": "eGlu Manual-2",
+      "categoryUrlLinks": [{
+        "urlLink": "/support/pdf/eglu1",
+        "pdfTitle": "eGlu brochure 3"
+      }]
+    },
+    {
+      "categoryTitle": "eGlu Manual-3",
+      "categoryUrlLinks": [{
+        "urlLink": "/support/pdf/eglu1",
+        "pdfTitle": "eGlu brochure 4"
+      }]
+    }
+  ]
+
+}

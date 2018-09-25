@@ -1,0 +1,223 @@
+<html lang="en" class="no-js">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.8/css/uikit.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css_files/about.css" />
+
+  <title>About Us</title>
+
+</head>
+
+<body>
+
+  <!--
+    ******* VERY IMPORTANT NOTE *******
+    The map api key that is present at the bottom of the page is only for testing purpose. Please replace that and restrict the key to be used only in our URL to avoid quota theft
+
+    Documentation:
+
+    This page has 4 main sections -> container-about div, eGlu-story div, our-founding div, locations div. Any changes to layout maybe made from about.css file.
+    Every section uses CSS Grids for alignment.
+
+    Javascript is used at the bottom of this file to use google maps and place a marker.
+  -->
+
+  <div class="container-about">
+    <header style="padding-bottom: 50px;">
+      <!-- nav starts -->
+      {{> navbar app-logo-image = "../Asset/logos/logo.png"}}
+      <!-- nav closed -->
+    </header>
+
+    <div class="main-grid">
+      <div class="image"><img id="main-image-img" src="../Asset/images/about/mainimg.png" /></div>
+      <div class="main-writeup">
+
+        <div class="main-writeup-header">
+          <h1>About eGlu</h1>
+          <hr>
+        </div>
+        <div class="main-writeup-paragraph">
+          <h5>eGlu is a Smart Living platform that provides benefits like security, convenience and also reduces energy usage of home owners. <br/> We are a group of smart home aficionados who believe that the last mile connectivity can not be standardized! </h5>
+          <div class="download-button-main-writeup"> <a href="https://play.google.com/store/apps/details?id=com.myeglu.android.elcloud" id="download-button"><button class="button">SIGN UP</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="eGlu-story">
+
+    <div class="story">
+      <div class="story-image">
+        <img src="../Asset/images/about/story.png" alt="">
+      </div>
+      <div class="story-text">
+        <div class="eGlu-story-header">
+          <h1>eGlu Story</h1>
+          <hr>
+        </div>
+        <h5>
+          Our stand on the IoT standardization debate is simple. The last mile connectivity can not be standardized! Consumers don’t care about the standards. They care about the experience, utility and cost. We want to provide a seamless experience to our customers - one mobile APP to take care of all their needs.</br> </h5>
+        <h3 id="our-vision-text">Our vision<h3>
+        <h5>
+              To transform peoples lives by building digital connectivity and intelligence around them.
+        </h5>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="our-founding">
+    <div class="founding-image"><img id="founding-image-img" src="../Asset/images/about/team-leader.png" alt=""></div>
+    <div class="our-founding-contents">
+      <div class="our-founding-header">
+        <h1>Our Founding</h1>
+        <hr>
+      </div>
+      <h5>
+      eGlu was founded in 20th August 2013 by Amit Premy. He is a graduate of IIT Kanpur. We are a bunch of passionate engineers who are challenging the status quo. We believe that the existing low power wireless standards are not sufficient to bring the IoT revolution with 50+ Billion devices connected to the Internet. Some of the challenges
+      with the existing technologies are: reliability of wireless communication in harsh environmental conditions; ultra low power communication budget to extend battery life and the cost of internet connectivity. We are trying to address these problems
+      with our technology. Our stand on the IoT standardization debate is simple.
+      </h5>
+    </div>
+  </div>
+
+  <div class="location">
+    <div class="location-header">
+      <h1>Locations</h1>
+      <hr>
+    </div>
+
+  <div class="map-contents">
+
+    <div class="map-information">
+      <div id="location-card" class="uk-card uk-card-default">
+      <h4 id="location-text-headquarter-text">eGlu is headquartered in <strong>Bangalore, India</strong></h4>
+        <h5 id="location-text-address-title"><strong>Address:</strong></h5>
+        <div id="address-1">
+          <i class="fas fa-map-marker-alt" style="font-size:20px; margin-top: 2px;position:absolute;"></i>
+          <h6 style="margin:0px 0px 0px 21px; line-height:17px;">No 102, 48, Regent Prime, <strong>Whitefield Main Road</strong>, Sathya Sai Layout Bengaluru, Karnataka 560066 IN, Whitefield Rd </h6>
+
+        </div>
+        <div class="get-directions-button">
+          <a href="https://www.google.co.in/maps/dir/''/eGlu,+Regent+Prime,+Whitefield+Road,+Bengaluru,+Karnataka+560037/@12.9677543,77.7476609,16.04z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae0d2994d7f1b7:0x506a2f581e60567f!2m2!1d77.7505632!2d12.9722658" id="directions-button">
+            <button class="button1">GET DIRECTIONS</button>
+          </a>
+        </div>
+      </div>
+
+      <div id="contact-card" class="uk-card uk-card-default">
+
+            <div class="contact-info-content">
+              <div class="contact-info-email">
+                <i style="font-size:22px;" class="fas fa-envelope"></i>
+                <span class="contact-info-text"><a href="mailto:contact@myeglu.com">contact@myeglu.com</a></span>
+              </div>
+              <div class="contact-info-phone">
+                <i style="font-size:22px;" class="fas fa-phone fa-flip-horizontal"></i>
+                <span class="contact-info-text">+91-7022765226</span>
+              </div>
+            </div>
+      </div>
+
+    </div>
+    <div id="map-map">
+    </div>
+  </div>
+
+  </div>
+
+  {{> footer }}
+
+  <script>
+    var marker;
+    var myLatLng = {
+      lat: 12.9722658,
+      lng: 77.7505632
+    };
+    var map;
+
+    function myMap() {
+      var mapOptions = {
+        center: new google.maps.LatLng(12.9722658, 77.7505632),
+        zoom: 13,
+      }
+      map = new google.maps.Map(document.getElementById("map-map"), mapOptions);
+      createMarker();
+    }
+
+    function toggleBounce() {
+      if (marker.getAnimation() !== null) {
+        marker.setAnimation(null);
+      } else {
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+      }
+    }
+
+    function createMarker() {
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        animation: google.maps.Animation.DROP,
+        title: "WiZN Systems",
+        label: {
+          text: "A",
+          color: "white"
+        }
+      });
+      google.maps.event.addListener(marker, "mouseover", function(evt) {
+        var label = this.getLabel();
+        label.color = "black";
+        this.setLabel(label);
+      });
+      google.maps.event.addListener(marker, "mouseout", function(evt) {
+        var label = this.getLabel();
+        label.color = "white";
+        this.setLabel(label);
+      });
+
+      var contentString = '<div id="map-info-content"> <h3>WiZN Systems</h3><h5>No 102, 48, Regent Prime, Whitefield Main Road, Sathya Sai Layout Bengaluru, Karnataka 560066 IN, Whitefield Rd </h5></div>';
+
+      var infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
+
+      marker.addListener('click', function() {
+        infowindow.open(map, marker);
+        map.panTo(this.getPosition());
+        map.setZoom(16);
+      });
+
+      return marker;
+    }
+  </script>
+
+  <script type="text/javascript">
+    function openNav() {
+      document.getElementById("nav-overlay").style.width = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("nav-overlay").style.width = "0%";
+    }
+  </script>
+
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH3gud4Fmaq52QjIJO9WIQrTKeiByzgDE&callback=myMap">
+  </script>
+  <!-- Latest compiled and minified CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
